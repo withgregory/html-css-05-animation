@@ -299,15 +299,58 @@
           </ul>
         </div>
       </section>
-      <button data-modal-open>Open modal window</button>
+
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="modal-close-button" data-modal-close>
             <svg width="18px" height="18px">
-              <use href="./images/icons-homework4/symbol-defs.svg#close-black"></use>
+              <use href="./images/icons-homework4/symbol-defs2.svg#close-black"></use>
             </svg>
           </button>
-          <button data-modal-close>Close</button>
+          <h2 class="modal-header">Leave your details, we will call you back</h2>
+          <form class="modal-form">
+            <div class="modal-input__container">
+              <label class="modal-label"
+                >Name
+                <svg class="modal-icon">
+                  <use href="./images/icons-homework4/symbol-defs2.svg#person-black"></use>
+                </svg>
+                <input class="modal-input" type="text" name="name" />
+              </label>
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label"
+                >Phone
+                <svg class="modal-icon">
+                  <use href="./images/icons-homework4/symbol-defs2.svg#phone-black"></use>
+                </svg>
+                <input class="modal-input" type="tel" name="telephone" />
+              </label>
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label"
+                >Email
+                <svg class="modal-icon">
+                  <use href="./images/icons-homework4/symbol-defs2.svg#email-black"></use>
+                </svg>
+                <input class="modal-input" type="email" name="email" />
+              </label>
+            </div>
+            <div class="modal-input__container">
+              <label class="modal-label" for="textarea">A comment</label>
+              <textarea class="modal-textarea" id="textarea" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+
+            <div class="modal-checkbox__submit">
+              <label class="modal__contract-checkbox" for="contract">
+                I agree with the newsletter and accept
+                <input class="modal-checkbox__input" type="checkbox" id="contract" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <a class="modal__contract-checkbox modal__contract-checkbox-link" href="">Agreement conditions</a>
+            </div>
+            <button class="general-button modal-submit__button" type="submit">Send</button>
+          </form>
         </div>
       </div>
       <script src="./js/modal.js"></script>
@@ -365,6 +408,20 @@
               </ul>
             </div>
           </div>
+        </div>
+        <div class="footer-newsletter">
+          <h2 class="footer-header">Subscribe to the newsletter</h2>
+          <form class="footer-email__form">
+            <label>
+              <input class="footer-input" type="email" name="email" placeholder=" E-mail" />
+            </label>
+            <button class="footer-signup__button general-button" type="submit">
+              Subscribe
+              <svg class="footer-form__icon">
+                <use href="./images/icons-homework4/symbol-defs2.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
