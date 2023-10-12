@@ -293,7 +293,7 @@ a {
 color: rgb(255, 255, 255, 60%);
 }
 
-.fotter-contacts {
+.footer-contacts {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -311,7 +311,9 @@ color: rgb(255, 255, 255, 60%);
 .footer_form-button {
   display: inline-flex;
 }
-
+footer h2 {
+  color: #F5F4FA;
+}
 .footer-email__form {
   display: flex;
 }
@@ -353,6 +355,7 @@ color: rgb(255, 255, 255, 60%);
   fill: #afb1b8;
   transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
+  transform: scale(230%);
 }
 
 .footer-input::placeholder {
@@ -556,15 +559,6 @@ address {
   align-items: baseline;
 }
 
-.social-network__icon-svg {
-  height: 20px;
-  width: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms var(--time-var);
-  background-color: transparent;
-  transform: scale(230%);
-}
-
 .icon-list {
     margin: 0;
     display: inline-flex;
@@ -652,25 +646,13 @@ address {
 }
 
 .index-product-overlay__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-}
-
-.index-product-overlay__container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
-
   width: 100%;
-  height: 70px;
+  height: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -703,7 +685,7 @@ address {
   transition: opacity 250ms var(--time-var), height 250ms var(--time-var);
 
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
   height: 0px;
 }
 
@@ -725,6 +707,7 @@ address {
 .nav-current-link::after {
   position: absolute;
   bottom: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: 4px;
